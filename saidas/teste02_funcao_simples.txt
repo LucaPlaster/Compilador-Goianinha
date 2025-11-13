@@ -1,0 +1,58 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste02_funcao_simples.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:13]
+  [FUNCAO 'soma' (tipo: int) linha:9]
+    [FUNCAO (tipo: desconhecido) linha:7]
+      [LISTA (tipo: desconhecido) linha:3]
+        [IDENTIFICADOR 'a' (tipo: int) linha:3]
+        [LISTA 'lista_params' (tipo: desconhecido) linha:3]
+          [IDENTIFICADOR 'b' (tipo: int) linha:3]
+      [BLOCO (tipo: void) linha:7]
+        [DECLARACAO_VARIAVEL 'resultado' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:7]
+          [COMANDO 'expr' (tipo: void) linha:5]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+              [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:5]
+              [EXPRESSAO '+' (tipo: desconhecido) linha:5]
+                [IDENTIFICADOR 'a' (tipo: desconhecido) linha:5]
+                [IDENTIFICADOR 'b' (tipo: desconhecido) linha:5]
+          [COMANDO 'retorne' (tipo: void) linha:6]
+            [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:6]
+  [BLOCO 'programa' (tipo: void) linha:13]
+    [BLOCO (tipo: void) linha:13]
+      [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:11]
+      [LISTA (tipo: desconhecido) linha:13]
+        [COMANDO 'expr' (tipo: void) linha:11]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:11]
+            [IDENTIFICADOR 'x' (tipo: desconhecido) linha:11]
+            [EXPRESSAO 'soma' (tipo: desconhecido) linha:11]
+              [LISTA (tipo: desconhecido) linha:11]
+                [LISTA 'args' (tipo: desconhecido) linha:11]
+                  [CONSTANTE '5' (tipo: int) linha:11]
+                [CONSTANTE '3' (tipo: int) linha:11]
+        [COMANDO 'escreva' (tipo: void) linha:12]
+          [IDENTIFICADOR 'x' (tipo: desconhecido) linha:12]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste02_funcao_simples.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

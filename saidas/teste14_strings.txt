@@ -1,0 +1,47 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste14_strings.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:11]
+  [BLOCO 'programa' (tipo: void) linha:11]
+    [BLOCO (tipo: void) linha:11]
+      [DECLARACAO_VARIAVEL 'c' (tipo: car) linha:5]
+      [LISTA (tipo: desconhecido) linha:11]
+        [COMANDO 'expr' (tipo: void) linha:5]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+            [IDENTIFICADOR 'c' (tipo: desconhecido) linha:5]
+            [CONSTANTE ''A'' (tipo: car) linha:5]
+        [LISTA (tipo: desconhecido) linha:11]
+          [COMANDO 'escreva_string' (tipo: void) linha:6]
+            [CONSTANTE 'Valor do caractere: ' (tipo: car) linha:6]
+          [LISTA (tipo: desconhecido) linha:11]
+            [COMANDO 'escreva' (tipo: void) linha:7]
+              [IDENTIFICADOR 'c' (tipo: desconhecido) linha:7]
+            [LISTA (tipo: desconhecido) linha:11]
+              [COMANDO 'novalinha' (tipo: void) linha:8]
+              [LISTA (tipo: desconhecido) linha:11]
+                [COMANDO 'escreva_string' (tipo: void) linha:9]
+                  [CONSTANTE 'Fim do programa' (tipo: car) linha:9]
+                [COMANDO 'novalinha' (tipo: void) linha:10]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste14_strings.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

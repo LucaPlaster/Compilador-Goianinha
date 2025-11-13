@@ -1,0 +1,73 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste17_lacos_aninhados.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:16]
+  [BLOCO 'programa' (tipo: void) linha:16]
+    [BLOCO (tipo: void) linha:16]
+      [DECLARACAO_VARIAVEL 'i' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:4]
+          [IDENTIFICADOR 'j' (tipo: desconhecido) linha:4]
+      [LISTA (tipo: desconhecido) linha:16]
+        [COMANDO 'expr' (tipo: void) linha:5]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+            [IDENTIFICADOR 'i' (tipo: desconhecido) linha:5]
+            [CONSTANTE '0' (tipo: int) linha:5]
+        [COMANDO 'enquanto' (tipo: void) linha:15]
+          [EXPRESSAO '<' (tipo: desconhecido) linha:6]
+            [IDENTIFICADOR 'i' (tipo: desconhecido) linha:6]
+            [CONSTANTE '3' (tipo: int) linha:6]
+          [BLOCO (tipo: void) linha:15]
+            [LISTA (tipo: desconhecido) linha:15]
+              [COMANDO 'expr' (tipo: void) linha:7]
+                [EXPRESSAO '=' (tipo: desconhecido) linha:7]
+                  [IDENTIFICADOR 'j' (tipo: desconhecido) linha:7]
+                  [CONSTANTE '0' (tipo: int) linha:7]
+              [LISTA (tipo: desconhecido) linha:15]
+                [COMANDO 'enquanto' (tipo: void) linha:13]
+                  [EXPRESSAO '<' (tipo: desconhecido) linha:8]
+                    [IDENTIFICADOR 'j' (tipo: desconhecido) linha:8]
+                    [CONSTANTE '2' (tipo: int) linha:8]
+                  [BLOCO (tipo: void) linha:13]
+                    [LISTA (tipo: desconhecido) linha:13]
+                      [COMANDO 'escreva' (tipo: void) linha:9]
+                        [IDENTIFICADOR 'i' (tipo: desconhecido) linha:9]
+                      [LISTA (tipo: desconhecido) linha:13]
+                        [COMANDO 'escreva' (tipo: void) linha:10]
+                          [IDENTIFICADOR 'j' (tipo: desconhecido) linha:10]
+                        [LISTA (tipo: desconhecido) linha:13]
+                          [COMANDO 'novalinha' (tipo: void) linha:11]
+                          [COMANDO 'expr' (tipo: void) linha:12]
+                            [EXPRESSAO '=' (tipo: desconhecido) linha:12]
+                              [IDENTIFICADOR 'j' (tipo: desconhecido) linha:12]
+                              [EXPRESSAO '+' (tipo: desconhecido) linha:12]
+                                [IDENTIFICADOR 'j' (tipo: desconhecido) linha:12]
+                                [CONSTANTE '1' (tipo: int) linha:12]
+                [COMANDO 'expr' (tipo: void) linha:14]
+                  [EXPRESSAO '=' (tipo: desconhecido) linha:14]
+                    [IDENTIFICADOR 'i' (tipo: desconhecido) linha:14]
+                    [EXPRESSAO '+' (tipo: desconhecido) linha:14]
+                      [IDENTIFICADOR 'i' (tipo: desconhecido) linha:14]
+                      [CONSTANTE '1' (tipo: int) linha:14]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste17_lacos_aninhados.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

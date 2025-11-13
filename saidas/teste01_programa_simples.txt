@@ -1,0 +1,49 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste01_programa_simples.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:11]
+  [BLOCO 'programa' (tipo: void) linha:11]
+    [BLOCO (tipo: void) linha:11]
+      [LISTA (tipo: desconhecido) linha:6]
+        [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:6]
+        [DECLARACAO_VARIAVEL 'y' (tipo: car) linha:6]
+      [LISTA (tipo: desconhecido) linha:11]
+        [COMANDO 'expr' (tipo: void) linha:6]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:6]
+            [IDENTIFICADOR 'x' (tipo: desconhecido) linha:6]
+            [CONSTANTE '10' (tipo: int) linha:6]
+        [LISTA (tipo: desconhecido) linha:11]
+          [COMANDO 'expr' (tipo: void) linha:7]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:7]
+              [IDENTIFICADOR 'y' (tipo: desconhecido) linha:7]
+              [CONSTANTE ''a'' (tipo: car) linha:7]
+          [LISTA (tipo: desconhecido) linha:11]
+            [COMANDO 'escreva' (tipo: void) linha:8]
+              [IDENTIFICADOR 'x' (tipo: desconhecido) linha:8]
+            [LISTA (tipo: desconhecido) linha:11]
+              [COMANDO 'escreva' (tipo: void) linha:9]
+                [IDENTIFICADOR 'y' (tipo: desconhecido) linha:9]
+              [COMANDO 'novalinha' (tipo: void) linha:10]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste01_programa_simples.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

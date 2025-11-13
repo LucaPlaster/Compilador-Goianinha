@@ -1,0 +1,66 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste03_expressoes_aritmeticas.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:10]
+  [BLOCO 'programa' (tipo: void) linha:10]
+    [BLOCO (tipo: void) linha:10]
+      [DECLARACAO_VARIAVEL 'a' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:4]
+          [IDENTIFICADOR 'b' (tipo: desconhecido) linha:4]
+          [LISTA (tipo: desconhecido) linha:4]
+            [IDENTIFICADOR 'c' (tipo: desconhecido) linha:4]
+            [LISTA (tipo: desconhecido) linha:4]
+              [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:4]
+      [LISTA (tipo: desconhecido) linha:10]
+        [COMANDO 'expr' (tipo: void) linha:5]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+            [IDENTIFICADOR 'a' (tipo: desconhecido) linha:5]
+            [CONSTANTE '10' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:10]
+          [COMANDO 'expr' (tipo: void) linha:6]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:6]
+              [IDENTIFICADOR 'b' (tipo: desconhecido) linha:6]
+              [CONSTANTE '5' (tipo: int) linha:6]
+          [LISTA (tipo: desconhecido) linha:10]
+            [COMANDO 'expr' (tipo: void) linha:7]
+              [EXPRESSAO '=' (tipo: desconhecido) linha:7]
+                [IDENTIFICADOR 'c' (tipo: desconhecido) linha:7]
+                [CONSTANTE '2' (tipo: int) linha:7]
+            [LISTA (tipo: desconhecido) linha:10]
+              [COMANDO 'expr' (tipo: void) linha:8]
+                [EXPRESSAO '=' (tipo: desconhecido) linha:8]
+                  [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:8]
+                  [EXPRESSAO '-' (tipo: desconhecido) linha:8]
+                    [EXPRESSAO '*' (tipo: desconhecido) linha:8]
+                      [EXPRESSAO '+' (tipo: desconhecido) linha:8]
+                        [IDENTIFICADOR 'a' (tipo: desconhecido) linha:8]
+                        [IDENTIFICADOR 'b' (tipo: desconhecido) linha:8]
+                      [IDENTIFICADOR 'c' (tipo: desconhecido) linha:8]
+                    [EXPRESSAO '/' (tipo: desconhecido) linha:8]
+                      [IDENTIFICADOR 'a' (tipo: desconhecido) linha:8]
+                      [IDENTIFICADOR 'b' (tipo: desconhecido) linha:8]
+              [COMANDO 'escreva' (tipo: void) linha:9]
+                [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:9]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste03_expressoes_aritmeticas.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

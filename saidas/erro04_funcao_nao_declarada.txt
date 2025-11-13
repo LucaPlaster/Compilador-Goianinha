@@ -1,0 +1,36 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/erro04_funcao_nao_declarada.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:6]
+  [BLOCO 'programa' (tipo: void) linha:6]
+    [BLOCO (tipo: void) linha:6]
+      [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:5]
+      [COMANDO 'expr' (tipo: void) linha:5]
+        [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+          [IDENTIFICADOR 'x' (tipo: desconhecido) linha:5]
+          [EXPRESSAO 'funcao_inexistente' (tipo: desconhecido) linha:5]
+            [LISTA 'args' (tipo: desconhecido) linha:5]
+              [CONSTANTE '10' (tipo: int) linha:5]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/erro04_funcao_nao_declarada.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

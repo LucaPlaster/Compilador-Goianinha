@@ -1,0 +1,60 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste12_sombreamento_variaveis.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:18]
+  [LISTA (tipo: desconhecido) linha:11]
+    [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:11]
+    [FUNCAO 'funcao' (tipo: int) linha:11]
+      [FUNCAO (tipo: desconhecido) linha:9]
+        [BLOCO (tipo: void) linha:9]
+          [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:7]
+          [LISTA (tipo: desconhecido) linha:9]
+            [COMANDO 'expr' (tipo: void) linha:7]
+              [EXPRESSAO '=' (tipo: desconhecido) linha:7]
+                [IDENTIFICADOR 'x' (tipo: desconhecido) linha:7]
+                [CONSTANTE '100' (tipo: int) linha:7]
+            [COMANDO 'retorne' (tipo: void) linha:8]
+              [IDENTIFICADOR 'x' (tipo: desconhecido) linha:8]
+  [BLOCO 'programa' (tipo: void) linha:18]
+    [BLOCO (tipo: void) linha:18]
+      [DECLARACAO_VARIAVEL 'resultado' (tipo: int) linha:13]
+      [LISTA (tipo: desconhecido) linha:18]
+        [COMANDO 'expr' (tipo: void) linha:13]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:13]
+            [IDENTIFICADOR 'x' (tipo: desconhecido) linha:13]
+            [CONSTANTE '50' (tipo: int) linha:13]
+        [LISTA (tipo: desconhecido) linha:18]
+          [COMANDO 'expr' (tipo: void) linha:14]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:14]
+              [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:14]
+              [EXPRESSAO 'funcao' (tipo: desconhecido) linha:14]
+          [LISTA (tipo: desconhecido) linha:18]
+            [COMANDO 'escreva' (tipo: void) linha:15]
+              [IDENTIFICADOR 'x' (tipo: desconhecido) linha:15]
+            [LISTA (tipo: desconhecido) linha:18]
+              [COMANDO 'novalinha' (tipo: void) linha:16]
+              [COMANDO 'escreva' (tipo: void) linha:17]
+                [IDENTIFICADOR 'resultado' (tipo: desconhecido) linha:17]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste12_sombreamento_variaveis.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

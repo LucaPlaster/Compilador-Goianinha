@@ -1,0 +1,35 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/erro03_tipos_incompativeis.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:9]
+  [BLOCO 'programa' (tipo: void) linha:9]
+    [BLOCO (tipo: void) linha:9]
+      [LISTA (tipo: desconhecido) linha:6]
+        [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:6]
+        [DECLARACAO_VARIAVEL 'c' (tipo: car) linha:6]
+      [LISTA (tipo: desconhecido) linha:9]
+        [COMANDO 'expr' (tipo: void) linha:6]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:6]
+            [IDENTIFICADOR 'x' (tipo: desconhecido) linha:6]
+            [CONSTANTE '10' (tipo: int) linha:6]
+        [LISTA (tipo: desconhecido) linha:9]
+          [COMANDO 'expr' (tipo: void) linha:7]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:7]
+              [IDENTIFICADOR 'c' (tipo: desconhecido) linha:7]
+              [CONSTANTE ''a'' (tipo: car) linha:7]
+          [COMANDO 'expr' (tipo: void) linha:8]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:8]
+              [IDENTIFICADOR 'x' (tipo: desconhecido) linha:8]
+              [IDENTIFICADOR 'c' (tipo: desconhecido) linha:8]
+
+
+=== Iniciando Analise Semantica ===
+ERRO SEMANTICO: Atribuicao com tipos incompativeis (linha 8)

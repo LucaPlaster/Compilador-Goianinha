@@ -1,0 +1,37 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste13_comentarios.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:10]
+  [BLOCO 'programa' (tipo: void) linha:10]
+    [BLOCO (tipo: void) linha:10]
+      [DECLARACAO_VARIAVEL 'x' (tipo: int) linha:8]
+      [LISTA (tipo: desconhecido) linha:10]
+        [COMANDO 'expr' (tipo: void) linha:8]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:8]
+            [IDENTIFICADOR 'x' (tipo: desconhecido) linha:8]
+            [CONSTANTE '10' (tipo: int) linha:8]
+        [COMANDO 'escreva' (tipo: void) linha:9]
+          [IDENTIFICADOR 'x' (tipo: desconhecido) linha:9]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste13_comentarios.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+

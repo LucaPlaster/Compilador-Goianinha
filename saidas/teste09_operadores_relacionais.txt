@@ -1,0 +1,77 @@
+
+==================================================
+       COMPILADOR DA LINGUAGEM GOIANINHA         
+==================================================
+Arquivo fonte: ./testes/teste09_operadores_relacionais.g
+==================================================
+
+=== Fase 1 e 2: Analise Lexica e Sintatica ===
+Analise sintatica concluida com sucesso!
+
+=== Arvore Sintatica Abstrata (AST) ===
+[PROGRAMA (tipo: void) linha:19]
+  [BLOCO 'programa' (tipo: void) linha:19]
+    [BLOCO (tipo: void) linha:19]
+      [DECLARACAO_VARIAVEL 'a' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:4]
+          [IDENTIFICADOR 'b' (tipo: desconhecido) linha:4]
+      [LISTA (tipo: desconhecido) linha:19]
+        [COMANDO 'expr' (tipo: void) linha:5]
+          [EXPRESSAO '=' (tipo: desconhecido) linha:5]
+            [IDENTIFICADOR 'a' (tipo: desconhecido) linha:5]
+            [CONSTANTE '10' (tipo: int) linha:5]
+        [LISTA (tipo: desconhecido) linha:19]
+          [COMANDO 'expr' (tipo: void) linha:6]
+            [EXPRESSAO '=' (tipo: desconhecido) linha:6]
+              [IDENTIFICADOR 'b' (tipo: desconhecido) linha:6]
+              [CONSTANTE '5' (tipo: int) linha:6]
+          [LISTA (tipo: desconhecido) linha:19]
+            [COMANDO 'se' (tipo: void) linha:9]
+              [EXPRESSAO '==' (tipo: desconhecido) linha:8]
+                [IDENTIFICADOR 'a' (tipo: desconhecido) linha:8]
+                [CONSTANTE '10' (tipo: int) linha:8]
+              [COMANDO 'escreva_string' (tipo: void) linha:8]
+                [CONSTANTE 'a eh 10' (tipo: car) linha:8]
+            [LISTA (tipo: desconhecido) linha:19]
+              [COMANDO 'novalinha' (tipo: void) linha:9]
+              [LISTA (tipo: desconhecido) linha:19]
+                [COMANDO 'se' (tipo: void) linha:12]
+                  [EXPRESSAO '!=' (tipo: desconhecido) linha:11]
+                    [IDENTIFICADOR 'a' (tipo: desconhecido) linha:11]
+                    [IDENTIFICADOR 'b' (tipo: desconhecido) linha:11]
+                  [COMANDO 'escreva_string' (tipo: void) linha:11]
+                    [CONSTANTE 'a diferente de b' (tipo: car) linha:11]
+                [LISTA (tipo: desconhecido) linha:19]
+                  [COMANDO 'novalinha' (tipo: void) linha:12]
+                  [LISTA (tipo: desconhecido) linha:19]
+                    [COMANDO 'se' (tipo: void) linha:15]
+                      [EXPRESSAO '>' (tipo: desconhecido) linha:14]
+                        [IDENTIFICADOR 'a' (tipo: desconhecido) linha:14]
+                        [IDENTIFICADOR 'b' (tipo: desconhecido) linha:14]
+                      [COMANDO 'escreva_string' (tipo: void) linha:14]
+                        [CONSTANTE 'a maior que b' (tipo: car) linha:14]
+                    [LISTA (tipo: desconhecido) linha:19]
+                      [COMANDO 'novalinha' (tipo: void) linha:15]
+                      [LISTA (tipo: desconhecido) linha:19]
+                        [COMANDO 'se' (tipo: void) linha:18]
+                          [EXPRESSAO '<' (tipo: desconhecido) linha:17]
+                            [IDENTIFICADOR 'b' (tipo: desconhecido) linha:17]
+                            [IDENTIFICADOR 'a' (tipo: desconhecido) linha:17]
+                          [COMANDO 'escreva_string' (tipo: void) linha:17]
+                            [CONSTANTE 'b menor que a' (tipo: car) linha:17]
+                        [COMANDO 'novalinha' (tipo: void) linha:18]
+
+
+=== Iniciando Analise Semantica ===
+=== Analise Semantica Concluida com Sucesso ===
+
+=== Fase 4: Geracao de Codigo MIPS ===
+Gerando codigo MIPS em: ./mips_gerado/teste09_operadores_relacionais.asm
+Codigo MIPS gerado com sucesso!
+
+=== Liberando recursos ===
+
+==================================================
+       COMPILACAO CONCLUIDA COM SUCESSO!         
+==================================================
+
