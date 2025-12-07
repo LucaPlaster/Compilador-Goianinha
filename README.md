@@ -25,16 +25,6 @@ Este projeto implementa um **compilador completo** para a linguagem de programa�
 3. **Análise Semântica**: Verificação de tipos, escopos e regras semânticas
 4. **Geração de Código**: Tradução para Assembly MIPS
 
-### Características Principais
-
-- ✅ Suporte completo para as construções da linguagem Goianinha
-- ✅ Sistema robusto de gerenciamento de símbolos com pilha de escopos
-- ✅ Verificação completa de tipos e erros semânticos
-- ✅ Geração de código MIPS executável no simulador SPIM
-- ✅ Mensagens de erro detalhadas com números de linha
-- ✅ Código totalmente comentado em português
-- ✅ Suite abrangente de testes
-
 ---
 
 ## 📂 Estrutura do Projeto
